@@ -54,19 +54,19 @@ class SortDirectory:
                         shutil.move(txt_path, dir_videos)
                         known_extensions.append(list_files[-1])
                     elif list_files[-1].upper() in list_music:
-                        new_name = os.path.join(root, self.name.verification(file))
+                        new_name = os.path.join(root, self.name.verificate(file))
                         os.rename(txt_path, new_name)
                         txt_path = new_name
                         shutil.move(txt_path, dir_music)
                         known_extensions.append(list_files[-1])
                     elif list_files[-1].upper() in list_documents:
-                        new_name = os.path.join(root, self.name.verification(file))
+                        new_name = os.path.join(root, self.name.verificate(file))
                         os.rename(txt_path, new_name)
                         txt_path = new_name
                         shutil.move(txt_path, dir_documents)
                         known_extensions.append(list_files[-1])
                     elif list_files[-1].upper() in list_programming:
-                        new_name = os.path.join(root, self.name.verification(file))
+                        new_name = os.path.join(root, self.name.verificate(file))
                         os.rename(txt_path, new_name)
                         txt_path = new_name
                         shutil.move(txt_path, dir_programming)
