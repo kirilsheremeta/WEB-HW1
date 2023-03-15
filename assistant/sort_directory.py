@@ -11,7 +11,7 @@ class SortDirectory:
         self.view = SortDirectoryView()
         self.name = NameVerification()
 
-    def sort_create_files(start_path):
+    def sort_create_files(self, start_path):
         """create dirs"""
         dir_archives = os.path.join(start_path, "archives")
         dir_documents = os.path.join(start_path, "documents")
